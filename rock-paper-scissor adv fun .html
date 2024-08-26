@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      rock-paper-scissors
+    </title>
+    <link rel="stylesheet" href="rock-paper-scissors adv fun .css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <p class="title">rock-paper-scissors</p>
+    <!-- random number generte from  0 to 1-->
+
+    <button onclick="
+     play('rock');
+    "class="move-button"><img src="image/rock-emoji.png" class="icon"></button>
+    
+    <button onclick="
+    play('paper');
+    "class="move-button"><img src="image/paper-emoji.png" class="icon"></button>
+    
+    <button onclick="
+    play('scissors');
+    "class="move-button"><img src="image/scissors-emoji.png " class="icon"></button>
+    
+    <p class="js-result result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score score"> </p>
+    
+      <button onclick="
+      score.wins=0;
+      score.losses=0;
+      score.ties=0;
+      localStorage.removeItem('score');
+      update();
+      " class="reset">Reset Score</button>
+
+      <button class="auto-play" onclick="
+      autoPlay();">Auto play</button>
+
+  </body>
+  <script src="rock-paper-scissors adv fun .js"></script>
+</html>
